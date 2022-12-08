@@ -2,10 +2,10 @@ use rand::Rng; // importing the Rng trait for number gen
 extern crate rand;
 
 fn main() {
-    let mut rng = rand::thread_rng(); // Create a mutable reference to a new random number generator
+    let mut rng = rand::thread_rng(); // create a mutable reference to a new random number generator to get odd or even number
 
 
-    // Generate a random number between 0 and 10.. you can change this if you want a bigger or smaller range
+    // generate a random number between 0 and 10.. you can change this if you want a bigger or smaller range
     let random_numone:i32  = rng.gen_range(0, 11);
     let random_numtwo:i32 = rng.gen_range(0, 11);
 
@@ -15,11 +15,11 @@ fn main() {
 
     // declare num one rust or acean
     if random_numone % 2 == 0 {
-        // The number is even
+        // the number is even
         println!("acean  your number is  {}", random_numone);
          random_string1 = "acean";
     } else {
-        // The number is odd
+        // the number is odd
         println!("rust  your number is  {}", random_numone);
         random_string1 = "rust";
     }
@@ -27,11 +27,11 @@ fn main() {
 
     // declare num two rust or acean
     if random_numtwo % 2 == 0 {
-        // The number is even
+        // the number is even
         println!("acean  your number is  {}", random_numtwo);
          random_string2 = "acean";
     } else {
-        // The number is odd
+        // the number is odd
         println!("rust  your number is  {}", random_numtwo);
          random_string2 = "rust";
     }
