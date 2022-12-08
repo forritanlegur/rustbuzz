@@ -13,7 +13,7 @@ fn main() {
     let mut random_string1 = "one";
     let mut random_string2 = "two";
 
-    // declare num two rust or acean
+    // declare num one rust or acean
     if random_numone % 2 == 0 {
         // The number is even
         println!("acean  your number is  {}", random_numone);
