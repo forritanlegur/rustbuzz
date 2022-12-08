@@ -1,4 +1,4 @@
-# rustbuzz
+# rustbuzz 🦀
 My first shot at rust!
 
 The idea was to make a fizzbuzz inspired program, but different. This is rustbuzz! It will generate two random numbers. If the first number is odd and the second one is even then it will print "rustacean"(rust+acean) and then you win. If you get any other combination like a aceanrust or rustrust, then you lose, I guess. 
