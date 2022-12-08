@@ -1,11 +1,11 @@
-use rand::Rng; // Import the Rng trait
+use rand::Rng; // importing the Rng trait for number gen
 extern crate rand;
 
 fn main() {
     let mut rng = rand::thread_rng(); // Create a mutable reference to a new random number generator
 
 
-    // Generate a random number between 0 and 10
+    // Generate a random number between 0 and 10.. you can change this if you want a bigger or smaller range
     let random_numone:i32  = rng.gen_range(0, 11);
     let random_numtwo:i32 = rng.gen_range(0, 11);
 
@@ -36,10 +36,12 @@ fn main() {
          random_string2 = "rust";
     }
 
+    //making string from the random numbers
     let rustacean = format!("{}{}", random_string1, random_string2);
 
     println!(" you got a {}", rustacean);
 
+    //checking if the string is rustacean 
     if rustacean == "rustacean" {
         println!("wow, a rustacean! your numbers were  {}  {}", random_numone, random_numtwo);
     } else {
